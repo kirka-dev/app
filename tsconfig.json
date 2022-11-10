@@ -25,8 +25,9 @@
     ],
     "baseUrl": "./src/",
     "paths": {
-      "@repositories/*": ["repositories/*"],
       "@components/*": ["components/*"],
+      "@repositories/*": ["repositories/*"],
+      "@shared/*": ["shared/*"],
       "@styles/*": ["styles/pages/*"]
     }
   },

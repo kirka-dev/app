@@ -1,11 +1,12 @@
-import styles from "@styles/Profile.module.scss";
+import {Fragment} from "react";
 import cn from "classnames";
+import styles from "@styles/Profile.module.scss";
 
 const Profile = () => {
   return (
-    <div className={cn(styles.Profile)}>
-      Profile
-    </div>
+    <Fragment>
+      Профиль
+    </Fragment>
   )
 }
 

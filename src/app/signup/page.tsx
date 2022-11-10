@@ -1,12 +1,12 @@
-import styles from "../../styles/pages/Signup.module.scss";
 import cn from "classnames";
+import styles from "../../styles/pages/Signup.module.scss";
 
 const Page = () => {
-    return (
-        <div>
-            Signup
-        </div>
-    )
+  return (
+    <main>
+      Signup
+    </main>
+  )
 }
 
 export default Page

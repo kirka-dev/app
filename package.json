@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:api": "cd ../api && yarn start:dev",
     "lint": "next lint",
     "preinstall": "npm set registry https://registry.npmjs.org/",
     "storybook": "start-storybook -p 6006 -s ./public",

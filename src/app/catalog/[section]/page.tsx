@@ -1,12 +1,12 @@
-import styles from "@styles/Catalog.module.scss";
 import cn from "classnames";
+import styles from "@styles/Catalog.module.scss";
 
 const Catalog = () => {
-    return (
-        <div>
-            Catalog
-        </div>
-    )
+  return (
+    <main>
+      Catalog
+    </main>
+  )
 }
 
 export default Catalog

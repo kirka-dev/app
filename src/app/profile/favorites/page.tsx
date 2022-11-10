@@ -1,12 +1,13 @@
-import styles from "@styles/Favorites.module.scss";
+import {Fragment} from "react";
 import cn from "classnames";
+import styles from "@styles/Favorites.module.scss";
 
 const Page = () => {
-    return (
-        <div>
-            Favorites
-        </div>
-    )
+  return (
+    <Fragment>
+      Избранное
+    </Fragment>
+  )
 }
 
 export default Page

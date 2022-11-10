@@ -1,5 +1,10 @@
 import React from "react";
+import cn from "classnames";
 import '../styles/globals.scss';
+import Header from "@components/common/header";
+import Navigation from "@components/common/navigation";
+import Footer from "@components/common/footer";
+import styles from "@styles/Home.module.scss";
 
 export default function RootLayout({ children }: {
   children: React.ReactNode;
@@ -7,10 +12,11 @@ export default function RootLayout({ children }: {
   return (
     <html>
       <head></head>
-      <body>
-        <header></header>
+      <body className={cn(styles.Layout)}>
+        <Header/>
+        <Navigation/>
         {children}
-        <footer></footer>
+        <Footer/>
       </body>
     </html>
   );

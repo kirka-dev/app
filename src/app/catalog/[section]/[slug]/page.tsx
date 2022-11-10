@@ -1,12 +1,12 @@
-import styles from "@styles/Product.module.scss";
 import cn from "classnames";
+import styles from "@styles/Product.module.scss";
 
 const Product = () => {
-    return (
-        <div>
-            Product
-        </div>
-    )
+  return (
+    <main>
+      Product
+    </main>
+  )
 }
 
 export default Product

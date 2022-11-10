@@ -1,5 +1,5 @@
-import styles from "@styles/Management.module.scss";
 import cn from "classnames";
+import styles from "@styles/Management.module.scss"
 
 const Management = () => {
   return (

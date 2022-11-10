@@ -1,11 +1,11 @@
-import styles from "@styles/Home.module.scss";
 import cn from "classnames";
+import styles from "@styles/Home.module.scss";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       Home
-    </div>
+    </main>
   )
 }
 

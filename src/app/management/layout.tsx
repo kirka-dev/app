@@ -1,22 +1,17 @@
-import React from "react";
-import Menu from "../../components/management/menu";
-
-interface LayoutInterface {
-  children : React.ReactNode
-}
+import cn from "classnames";
+import Menu from "@components/common/menu";
+import {ManagementMenuConst} from "@shared/consts/management-menu.const";
+import {LayoutInterface} from "@shared/interfaces/layout.interface";
+import styles from "@styles/Management.module.scss";
 
 export default function ManagementLayout({children}: LayoutInterface) {
-  const style = {
-    display: "grid",
-    gridTemplateColumns: "3fr 2fr",
-    minHeight: "100vh"
-  }
-
   return (
-    <main style={style}>
-      {children}
+    <main className={cn(styles.Layout)}>
+      <section>
+        {children}
+      </section>
       <aside>
-        <Menu/>
+        <Menu items={ManagementMenuConst}/>
       </aside>
     </main>
   );

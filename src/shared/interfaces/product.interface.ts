@@ -8,7 +8,7 @@ export interface ProductInterface {
   brand?: BrandInterface,
   category?: CategoryInterface,
   color?: ColorInterface,
-  imager?: string,
+  images?: string,
   model?: string,
   prices?: PriceInterface[],
   createdAt?: Date,
