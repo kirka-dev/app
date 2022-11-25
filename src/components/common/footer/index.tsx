@@ -1,10 +1,12 @@
 import cn from "classnames";
 import styles from "./footer.module.scss";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className={cn(styles.Footer)}>
-      Footer
+      <div className={cn(styles.Footer__container)}>
+        footer
+      </div>
     </footer>
   )
 }

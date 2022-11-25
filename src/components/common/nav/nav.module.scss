@@ -1,0 +1,11 @@
+@import "src/styles/variables";
+
+.Nav {
+  height: $nav-height;
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+
+  &__container {
+    @include container-width;
+  }
+}

@@ -1,3 +1,10 @@
+@import "src/styles/variables";
+
 .Footer {
+  height: $footer-height;
   border-top: solid 1px #000000;
+
+  &__container {
+    @include container-width;
+  }
 }

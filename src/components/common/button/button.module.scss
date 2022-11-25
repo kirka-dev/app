@@ -1,0 +1,15 @@
+.Button {
+  width: 100%;
+
+  button {
+    border: solid 1px #000000;
+    outline: none;
+    background-color: initial;
+    width: 100%;
+    height: 35px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

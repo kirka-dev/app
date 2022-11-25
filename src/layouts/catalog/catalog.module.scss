@@ -1,0 +1,7 @@
+@import "src/styles/variables";
+
+.Grid {
+  @include container-width;
+
+  min-height: $main-height;
+}

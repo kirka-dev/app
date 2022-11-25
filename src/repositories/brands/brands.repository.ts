@@ -13,14 +13,14 @@ class BrandsRepository {
   }
 
   update(brand: BrandInterface) {
-    return axios.put(`${this.path}/${brand.id}`, brand)
+    return axios.put(`${this.path}`, brand)
   }
 
   remove(id: number) {
     return axios.delete(`${this.path}/${id}`);
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return axios.get(`${this.path}/${id}`);
   }
 

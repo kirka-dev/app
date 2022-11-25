@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from "axios";
-import {ColorInterface} from "@shared/interfaces/color.interface";
+import {MessengerInterface} from "@shared/interfaces/messenger.interface";
 
 class MessengersRepository {
   private readonly path: string;
@@ -8,11 +8,11 @@ class MessengersRepository {
     this.path = path;
   }
 
-  create(color: ColorInterface) {
+  create(color: MessengerInterface) {
     return axios.post(`${this.path}/`, color);
   }
 
-  update(color: ColorInterface) {
+  update(color: MessengerInterface) {
     return axios.put(`${this.path}/${color.id}`, color)
   }
 
@@ -24,9 +24,9 @@ class MessengersRepository {
     return axios.get(`${this.path}/${id}`);
   }
 
-  findAll(): Promise<AxiosResponse<ColorInterface[]>> {
+  findAll(): Promise<AxiosResponse<MessengerInterface[]>> {
     return axios.get(`${this.path}/`);
   }
 }
 
-export default new MessengersRepository('http://localhost:8000/colors')
+export default new MessengersRepository('http://localhost:8000/messengers')

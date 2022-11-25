@@ -1,8 +1,27 @@
-.Layout {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+.Management {
+  &__form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+  }
 
-  section {
-    border-right: solid 1px #000;
+  &__header {
+    padding-bottom: 15px;
+  }
+
+  &__addButton {
+    margin-left: auto;
+    width: 150px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+}
+
+.BrandCard {
+  &__name {
+    font-size: 10px;
   }
 }

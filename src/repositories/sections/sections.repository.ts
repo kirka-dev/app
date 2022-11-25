@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from "axios";
-import {ColorInterface} from "@shared/interfaces/color.interface";
+import {SectionInterface} from "@shared/interfaces/section.interface";
 
 class SectionsRepository {
   private readonly path: string;
@@ -8,11 +8,11 @@ class SectionsRepository {
     this.path = path;
   }
 
-  create(color: ColorInterface) {
+  create(color: SectionInterface) {
     return axios.post(`${this.path}/`, color);
   }
 
-  update(color: ColorInterface) {
+  update(color: SectionInterface) {
     return axios.put(`${this.path}/${color.id}`, color)
   }
 
@@ -24,9 +24,9 @@ class SectionsRepository {
     return axios.get(`${this.path}/${id}`);
   }
 
-  findAll(): Promise<AxiosResponse<ColorInterface[]>> {
+  findAll(): Promise<AxiosResponse<SectionInterface[]>> {
     return axios.get(`${this.path}/`);
   }
 }
 
-export default new SectionsRepository('http://localhost:8000/colors')
+export default new SectionsRepository('http://localhost:8000/sections')

@@ -1,0 +1,18 @@
+@import "src/styles/variables";
+
+.Grid {
+  @include container-width;
+
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  min-height: $main-height;
+
+  section {
+    padding: 50px 50px 50px 0;
+  }
+
+  aside {
+    padding: 50px 0 50px 50px;
+    border-left: solid 1px #000;
+  }
+}

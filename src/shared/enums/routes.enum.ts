@@ -16,4 +16,6 @@ export enum RoutesEnum {
   PROFILE = '/profile',
   FAVORITES = '/favorites',
   SIGNUP = '/signup',
+  ADD = '/add',
+  EDIT = '/edit',
 }

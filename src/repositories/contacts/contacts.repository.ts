@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from "axios";
-import {ColorInterface} from "@shared/interfaces/color.interface";
+import {ContactInterface} from "@shared/interfaces/contact.interface";
 
 class ContactsRepository {
   private readonly path: string;
@@ -8,11 +8,11 @@ class ContactsRepository {
     this.path = path;
   }
 
-  create(color: ColorInterface) {
+  create(color: ContactInterface) {
     return axios.post(`${this.path}/`, color);
   }
 
-  update(color: ColorInterface) {
+  update(color: ContactInterface) {
     return axios.put(`${this.path}/${color.id}`, color)
   }
 
@@ -24,9 +24,9 @@ class ContactsRepository {
     return axios.get(`${this.path}/${id}`);
   }
 
-  findAll(): Promise<AxiosResponse<ColorInterface[]>> {
+  findAll(): Promise<AxiosResponse<ContactInterface[]>> {
     return axios.get(`${this.path}/`);
   }
 }
 
-export default new ContactsRepository('http://localhost:8000/colors')
+export default new ContactsRepository('http://localhost:8000/contacts')

@@ -1,17 +1,20 @@
-import Link from "next/link";
 import cn from "classnames";
+import Link from "next/link";
+import User from "@static/user.svg"
 import styles from "./header.module.scss";
-import Logotype from "@components/common/logotype";
-import {RoutesEnum} from "@shared/enums/routes.enum";
 
-function Header() {
+const Header = () => {
   return (
     <header className={cn(styles.Header)}>
-      <div className={styles.Header__logotype}>
-        <Logotype/>
-      </div>
-      <div className={styles.Header__menu}>
-        <Link href={RoutesEnum.PROFILE}>Профиль</Link>
+      <div className={cn(styles.Header__container)}>
+        <div className={cn(styles.Header__logotype)}>
+          Lascain
+        </div>
+        <div className={cn(styles.Header__menu)}>
+          <Link href='/profile'>
+            <User className={cn(styles.Header__icon)}/>
+          </Link>
+        </div>
       </div>
     </header>
   )
